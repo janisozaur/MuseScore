@@ -47,9 +47,7 @@ matrix:
             - libpulse-dev
             - libgtk2.0-bin
             - expect
-      cache:
-        directories:
-          - $HOME/.ccache
+      cache: ccache
       before_install:
         - "source build/travis/job1_Tests/environment.sh"
       install:
